@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import './App.css'
 // import BaseNav from './components/BaseNav/BaseNav'
 // import DragDemo from './components/DragDemo/DragDemo'
-import DragDrop from './components/DragDrop/DragDrop'
-// import WhiteBlock from './components/WhiteBlock/WhiteBlock'
+// import DragDrop from './components/DragDrop/DragDrop'
+import WhiteBlock from './components/WhiteBlock/WhiteBlock'
 
 export default class App extends Component{
   constructor (props) {
@@ -64,8 +65,8 @@ export default class App extends Component{
         </BaseNav>
         <p style={{ marginTop: 100 }}>{this.state.msg}</p> */}
         {/* <DragDemo /> */}
-        <DragDrop />
-        {/* <WhiteBlock /> */}
+        {/* <DragDrop /> */}
+        <WhiteBlock />
       </div>
     )
   }
