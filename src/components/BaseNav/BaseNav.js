@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './baseNav.scss'
 
-function ObjFunc () {
-  return (
-    <h1>哈哈哈哈</h1>
-  )
-}
+// function ObjFunc () {
+//   return (
+//     <h1>哈哈哈哈</h1>
+//   )
+// }
 
 export default class baseNav extends Component {
   componentDidMount () {
@@ -57,7 +57,7 @@ export default class baseNav extends Component {
             })
           }
         </ul>
-        <ObjFunc />
+        {/* <ObjFunc /> */}
       </div>
     )
   }

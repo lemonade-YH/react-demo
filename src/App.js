@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css'
-// import BaseNav from './components/BaseNav/BaseNav'
+import BaseNav from './components/BaseNav/BaseNav'
 // import DragDemo from './components/DragDemo/DragDemo'
 // import DragDrop from './components/DragDrop/DragDrop'
-import WhiteBlock from './components/WhiteBlock/WhiteBlock'
+// import WhiteBlock from './components/WhiteBlock/WhiteBlock'
 
 export default class App extends Component{
   constructor (props) {
@@ -61,12 +61,12 @@ export default class App extends Component{
   render () {
     return (
       <div className="App">
-        {/* <BaseNav data={this.state.data} changeMsg={this.changeMsg.bind(this)}>
+        <BaseNav data={this.state.data} changeMsg={this.changeMsg.bind(this)}>
         </BaseNav>
-        <p style={{ marginTop: 100 }}>{this.state.msg}</p> */}
+        <p style={{ marginTop: 100 }}>{this.state.msg}</p>
         {/* <DragDemo /> */}
         {/* <DragDrop /> */}
-        <WhiteBlock />
+        {/* <WhiteBlock /> */}
       </div>
     )
   }

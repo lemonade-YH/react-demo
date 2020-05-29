@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './WhiteBlock.scss'
 import BaseTabs from '../BaseAnt/BaseTabs/BaseTabs.tsx'
+import BaseSlider from '../BaseAnt/BaseSlider/BaseSlider.tsx'
+import BaseInputNumber from '../BaseAnt/baseInputNumber/BaseInputNumber.tsx'
 
 export default function WhiteBlock () {
   const [num, setNum] = useState(1)
@@ -36,10 +38,16 @@ export default function WhiteBlock () {
   },[])// eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div>
+    <div className="container">
       <h1>{num}</h1>
       <div className="block"></div>
       <BaseTabs tabList={tabList} />
+      <div className="slider-wrapper">
+        <BaseSlider />
+      </div>
+      <div className="slider-wrapper">
+        <BaseInputNumber />
+      </div>
     </div>
   )
 }
